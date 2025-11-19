@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromeha Care – Book Appointment</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Aromeha Care</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="appointment.html" class="active">Appointment</a>
+        </nav>
+
+        <button class="nav-btn">Make Appointment</button>
+    </header>
+
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h1>Make an Appointment</h1>
+        <p>Book your visit with trusted and experienced medical professionals.</p>
+    </section>
+
+
+    <!-- APPOINTMENT FORM SECTION -->
+    <section class="appointment-section">
+
+        <!-- LEFT (FORM) -->
+        <div class="form-box">
+
+            <h2>Fill Your Details</h2>
+
+            <form>
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="number" placeholder="Enter phone number" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Appointment Date</label>
+                        <input type="date" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Select Department</label>
+                    <select required>
+                        <option>Cardiology</option>
+                        <option>Dermatology</option>
+                        <option>Orthopedics</option>
+                        <option>Eye Care</option>
+                        <option>Neurology</option>
+                        <option>General Medicine</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea placeholder="Write your message..." rows="4"></textarea>
+                </div>
+
+                <button class="submit-btn">Confirm Appointment</button>
+
+            </form>
+        </div>
+
+
+        <!-- RIGHT (IMAGE) -->
+        <div class="image-box">
+            <img src="dun04.png" alt="">
+        </div>
+
+    </section>
+
+
+</body>
+</html>
