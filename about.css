@@ -1,0 +1,196 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 70px;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3a3ad8;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links .active {
+    color: #3a3ad8;
+    font-weight: bold;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    background: #6366f1;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* BANNER */
+.about-banner {
+    height: 300px;
+    background: #e6e7ff;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .45;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+}
+
+.banner-content h1 {
+    font-size: 40px;
+    color: #1b1d8c;
+}
+
+.banner-content p {
+    color: #555;
+}
+
+
+
+/* ABOUT MAIN TEXT */
+.about-main {
+    padding: 70px 120px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-left, .about-right {
+    width: 48%;
+}
+
+.small-title {
+    color: #6b63ff;
+    font-size: 16px;
+}
+
+.about-left h2 {
+    font-size: 32px;
+    color: #1b1d8c;
+    line-height: 42px;
+    margin: 10px 0 15px;
+}
+
+.desc, .about-right p {
+    color: #555;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 18px;
+}
+
+.signature-box {
+    margin-top: 20px;
+}
+
+.sig {
+    font-size: 22px;
+    font-style: italic;
+    color: #6b63ff;
+}
+
+.sig-role {
+    font-size: 14px;
+    color: #888;
+}
+
+
+
+/* SEPARATION LINE */
+.about-divider {
+    width: 80%;
+    margin: 40px auto;
+    border: none;
+    border-top: 2px solid #e0e0ff;
+}
+
+
+
+/* BIG DOCTOR IMAGE SECTION */
+.about-image-section {
+    position: relative;
+    text-align: center;
+    margin: 60px 0 40px 0;
+    height: 650px;
+}
+
+/* Big Purple Circle */
+.big-circle {
+    width: 820px;
+    height: 820px;
+    background: #c7c9ff;
+    opacity: 0.38;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Main Doctor Image (BIG) */
+.big-doctor-img {
+    width: 780px;
+    position: relative;
+    z-index: 2;
+    margin-top: 80px;
+}
+
+
+
+/* STATS ROW BELOW IMAGE */
+.stats-row {
+    margin: 20px 120px 70px 120px;
+    padding: 30px 50px;
+    background: #8d92ff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.stat-box {
+    text-align: center;
+    width: 25%;
+}
+
+.stat-box h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
