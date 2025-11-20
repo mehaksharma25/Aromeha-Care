@@ -1,0 +1,191 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* UNIVERSAL NAVBAR */
+/* UNIVERSAL NAVBAR (HOME PAGE STYLE EXACT) */
+.navbar {
+    width: 100%;
+    height: 70px;                  /* EXACT home page size */
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;               /* EXACT home padding */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3a3ad8;                /* home page blue */
+}
+
+.nav-links a {
+    margin-left: 20px;             /* same spacing */
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-links .active {
+    color: #3a3ad8;                /* same accent */
+    font-weight: bold;
+}
+
+.nav-btn {
+    padding: 10px 20px;            /* exact button size */
+    background: #6366f1;           /* home theme */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+
+
+/* BANNER */
+.service-banner {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    overflow: hidden;
+    background: #dedfff;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.45;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.banner-content h1 {
+    font-size: 42px;
+    color: #1b1d8c;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    color: #555;
+}
+
+
+
+/* MAIN SERVICE SECTION */
+.service-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 120px;
+    gap: 50px;
+}
+
+
+
+/* LEFT SIDE */
+.service-left {
+    width: 50%;
+    position: relative;
+}
+
+.service-left-circle {
+    width: 420px;
+    height: 420px;
+    background: #bfc4ff;
+    border-radius: 50%;
+    opacity: 0.35;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 1;
+}
+
+.service-doctor {
+    width: 330px;
+    position: relative;
+    z-index: 2;
+    margin-left: 90px;
+}
+
+/* Calendar floating box */
+.service-calendar-box {
+    position: absolute;
+    bottom: -20px;
+    left: 115px;
+    z-index: 3;
+}
+
+.service-calendar-box img {
+    width: 240px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+
+/* RIGHT SIDE */
+.service-right {
+    width: 50%;
+}
+
+.service-right h2 {
+    font-size: 32px;
+    line-height: 42px;
+    color: #1b1d8c;
+    margin-bottom: 18px;
+}
+
+.service-right p {
+    color: #555;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+
+
+/* OPERATING HOURS BOX */
+.service-hours-box {
+    width: 350px;
+    background: linear-gradient(135deg, #8e9aff, #5e6bff);
+    padding: 25px;
+    border-radius: 14px;
+    color: white;
+}
+
+.service-hours-box h3 {
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.service-hours-box ul {
+    list-style: none;
+}
+
+.service-hours-box li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.closed {
+    opacity: 0.7;
+}
