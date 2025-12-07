@@ -18,10 +18,15 @@
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <a href="doctors.html">Doctors</a>
-            <a href="appointment.html" class="active">Appointment</a>
+            <!-- <a href="appointment.html" class="active">Appointment</a> -->
         </nav>
 
-        <button class="nav-btn">Make Appointment</button>
+        <button class="btn-appointment" onclick="location.href='appointment.html'">Make Appointment</button>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
 
@@ -40,7 +45,7 @@
 
             <h2>Fill Your Details</h2>
 
-            <form>
+            <form id="appointmentForm">
 
                 <div class="input-group">
                     <label>Full Name</label>
@@ -94,6 +99,17 @@
 
     </section>
 
+<!-- Success Popup -->
+<div id="successPopup" class="popup">
+  <div class="popup-box">
+    <h3>Appointment Booked!</h3>
+    <p>Your appointment request has been successfully submitted.</p>
+    <button id="closePopup">OK</button>
+  </div>
+</div>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
