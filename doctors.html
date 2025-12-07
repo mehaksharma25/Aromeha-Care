@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aromeha Care — Doctors</title>
+  <link rel="stylesheet" href="doctors.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav-bar">
+    <div class="brand">
+      <div class="brand-mark">A</div>
+      <div class="brand-text">Aromeha Care</div>
+    </div>
+
+    <nav id="navLinks" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="doctors.html" class="active">Doctors</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn-appoint" onclick="location.href='appointment.html'">Make Appointment</button>
+      <button id="hamburger" class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SERVICES-TYPE BANNER -->
+  <section class="banner doctors-banner">
+    <img class="banner-img" src="https://dunmedic.strongtheme.com/wp-content/uploads/2021/04/andun02.jpg" alt="doctors banner">
+    <div class="banner-copy">
+      <h1>Meet Our Doctors</h1>
+      <p>Trusted specialists across departments — profiles, quick booking.</p>
+    </div>
+  </section>
+
+  <main class="page">
+
+    <!-- FILTER  -->
+    <section class="filters container">
+      <div class="chips">
+        <button class="chip active">All</button>
+        <button class="chip">Cardiology</button>
+        <button class="chip">Orthopedics</button>
+        <button class="chip">Dermatology</button>
+        <button class="chip">Pediatrics</button>
+      </div>
+      <div class="sort">
+        <span class="small-muted">Showing</span>
+        <strong>6</strong>
+        <span class="small-muted">doctors</span>
+      </div>
+    </section>
+
+    <!-- DOCTORS GRID -->
+    <section class="doctors container">
+      <h2 class="section-title">Our Specialists</h2>
+
+      <div class="grid">
+        <!-- doctor card -->
+        <article class="profile">
+          <div class="portrait">
+            <img src="https://dunmedic.strongtheme.com/wp-content/uploads/2021/04/duntem01-1.jpg" alt="Dr Rohan">
+          </div>
+          <div class="info">
+            <h3>Dr. Rohan Mehra</h3>
+            <div class="spec">Cardiologist</div>
+            <div class="meta">
+              <div class="rating">★ 4.8</div>
+              <div class="years">10 yrs</div>
+            </div>
+            <p class="mini">Specializes in non-invasive cardiology & preventive care. Clear communication and follow-up.</p>
+
+            <div class="actions">
+              <a class="btn small" href="appointment.html">Book</a>
+              <a class="link" href="#">Profile</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div class="portrait">
+            <img src="https://dunmedic.strongtheme.com/wp-content/uploads/2021/04/duntem01-6.jpg" alt="Dr Kapoor">
+          </div>
+          <div class="info">
+            <h3>Dr. Rohan Kapoor</h3>
+            <div class="spec">Orthopedic Surgeon</div>
+            <div class="meta">
+              <div class="rating">★ 4.7</div>
+              <div class="years">8 yrs</div>
+            </div>
+            <p class="mini">Expert in joint replacement and arthroscopy. Warm bedside manner.</p>
+
+            <div class="actions">
+              <a class="btn small" href="appointment.html">Book</a>
+              <a class="link" href="#">Profile</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div class="portrait">
+            <img src="https://dunmedic.strongtheme.com/wp-content/uploads/2021/04/duntem01-4.jpg" alt="Dr Mehak">
+          </div>
+          <div class="info">
+            <h3>Dr. Mehak Arora</h3>
+            <div class="spec">Dermatologist</div>
+            <div class="meta">
+              <div class="rating">★ 4.9</div>
+              <div class="years">9 yrs</div>
+            </div>
+            <p class="mini">Focus on medical & cosmetic dermatology — practical, to-the-point advice.</p>
+
+            <div class="actions">
+              <a class="btn small" href="appointment.html">Book</a>
+              <a class="link" href="#">Profile</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div class="portrait">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=400&auto=format&fit=crop" alt="Dr Aarav">
+          </div>
+          <div class="info">
+            <h3>Dr. Aarav Patel</h3>
+            <div class="spec">Neurologist</div>
+            <div class="meta">
+              <div class="rating">★ 4.6</div>
+              <div class="years">11 yrs</div>
+            </div>
+            <p class="mini">Neuro care, headaches and stroke prevention programs.</p>
+
+            <div class="actions">
+              <a class="btn small" href="appointment.html">Book</a>
+              <a class="link" href="#">Profile</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div class="portrait">
+            <img src="https://dunmedic.strongtheme.com/wp-content/uploads/2021/04/duntem01-3.jpg" alt="Dr Kavya">
+          </div>
+          <div class="info">
+            <h3>Dr. Kavya R</h3>
+            <div class="spec">Pediatrician</div>
+            <div class="meta">
+              <div class="rating">★ 4.8</div>
+              <div class="years">7 yrs</div>
+            </div>
+            <p class="mini">Friendly with children, preventive immunization counseling.</p>
+
+            <div class="actions">
+              <a class="btn small" href="appointment.html">Book</a>
+              <a class="link" href="#">Profile</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div class="portrait">
+            <img src="https://dunmedic.strongtheme.com/wp-content/uploads/2021/04/duntem01-7.jpg" alt="Dr Ritu">
+          </div>
+          <div class="info">
+            <h3>Dr. Ritu Verma</h3>
+            <div class="spec">Dentist</div>
+            <div class="meta">
+              <div class="rating">★ 4.7</div>
+              <div class="years">6 yrs</div>
+            </div>
+            <p class="mini">General & cosmetic dental care with gentle approach.</p>
+
+            <div class="actions">
+              <a class="btn small" href="appointment.html">Book</a>
+              <a class="link" href="#">Profile</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+<section class="bottom-blocks container">
+  <div class="cert-card">
+    <h3>Accredited Certificate</h3>
+    <div class="cert-img">
+      <img src="https://dunmedic.strongtheme.com/wp-content/uploads/2021/05/icodun041.png" alt="certificate">
+    </div>
+    <p class="note">National accreditation — verified credentials and standards.</p>
+  </div>
+
+  <aside class="help-card">
+    <div class="help-head">
+      <div>
+        <h4>Clinic Hours</h4>
+        <p class="muted">Timings & current status</p>
+      </div>
+      <div class="now-status">
+        <span class="status-dot open" aria-hidden="true"></span>
+        <strong>Open Now</strong>
+      </div>
+    </div>
+
+    <div class="hours" role="list" aria-label="Clinic weekly hours">
+      <div class="hour-row" role="listitem">
+        <div class="day">Monday</div>
+        <div class="time">08:00 — 18:00</div>
+        <div class="status-pill open-pill">Open</div>
+      </div>
+
+      <div class="hour-row">
+        <div class="day">Tuesday</div>
+        <div class="time">08:00 — 18:00</div>
+        <div class="status-pill open-pill">Open</div>
+      </div>
+
+      <div class="hour-row">
+        <div class="day">Wednesday</div>
+        <div class="time">09:00 — 19:00</div>
+        <div class="status-pill open-pill">Open</div>
+      </div>
+
+      <div class="hour-row">
+        <div class="day">Thursday</div>
+        <div class="time">08:00 — 18:00</div>
+        <div class="status-pill open-pill">Open</div>
+      </div>
+
+      <div class="hour-row">
+        <div class="day">Friday</div>
+        <div class="time">08:30 — 18:00</div>
+        <div class="status-pill open-pill">Open</div>
+      </div>
+
+      <div class="hour-row">
+        <div class="day">Saturday</div>
+        <div class="time">09:30 — 17:00</div>
+        <div class="status-pill open-pill">Open</div>
+      </div>
+
+      <div class="hour-row">
+        <div class="day">Sunday</div>
+        <div class="time">Closed</div>
+        <div class="status-pill closed-pill">Closed</div>
+      </div>
+    </div>
+
+    <div class="emergency-block">
+      <div class="em-left">
+        <div class="em-label">Emergency Cases</div>
+        <div class="em-number">6240-123-4560</div>
+        <div class="em-note">24/7 urgent care & transport</div>
+      </div>
+      <a class="em-call" href="tel:+916240123456">Call Now</a>
+    </div>
+  </aside>
+</section>
+
+
+    <!-- small stats -->
+    <section class="stats container">
+      <div class="s"><strong>9,980+</strong><span>Happy patients</span></div>
+      <div class="s"><strong>75+</strong><span>Doctors</span></div>
+      <div class="s"><strong>540+</strong><span>Departments</span></div>
+      <div class="s"><strong>2,350+</strong><span>Branches</span></div>
+    </section>
+
+  <section class="footer-cta">
+    <div class="cta-inner">
+      <div class="cta-left">
+        <h3>Looking for professional & trusted medical healthcare?</h3>
+        <p>Don't hesitate — contact our team or book an appointment today.</p>
+        <a href="appointment.html" class="cta-btn">Make Appointment</a>
+      </div>
+
+      <div class="cta-cards">
+        <div class="cta-card">
+          <i class="fas fa-phone"></i>
+          <div><strong>+91 620 456 710</strong><small>Call us now</small></div>
+        </div>
+
+        <div class="cta-card">
+          <i class="fas fa-envelope"></i>
+          <div><strong>info@aromeha.com</strong><small>Drop us an email</small></div>
+        </div>
+
+        <div class="cta-card">
+          <i class="far fa-clock"></i>
+          <div><strong>24 x 7 support</strong><small>We are open on</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="big-footer">
+    <div class="footer-top">
+      <div class="col brand-col">
+        <div class="brand-row"><div class="brand-mark">A</div><h2 class="brand-name">Aromeha Care</h2></div>
+        <p class="brand-text">Pellentesque, placerat congue at urna risus tincidunt, himenaeos pretium fermentum. Providing trusted medical care with modern facilities and compassionate staff.</p>
+      </div>
+
+      <div class="col links-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="appointment.html">Make Appointments</a></li>
+          <li><a href="#">Customer Treatments</a></li>
+          <li><a href="#">Consulting your health</a></li>
+        </ul>
+      </div>
+
+      <div class="col services-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Surgery</a></li>
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Pediatrics</a></li>
+          <li><a href="#">Anesthesiology</a></li>
+        </ul>
+      </div>
+
+      <div class="col news-col">
+        <h4>Latest News</h4>
+        <div class="news-item"><img src="https://images.unsplash.com/photo-1587502536263-4b06f2b8d6d5?q=80&w=200&auto=format&fit=crop" alt=""><div><a href="#">Get the Home care and nursing service</a><small>Nov 12, 2025</small></div></div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="left">© <span id="footer-year"></span> Aromeha Care. All rights reserved.</div>
+      <div class="right"><a href="#">Privacy Policy</a><span class="dot">•</span><a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+
+
+</body>
+</html>
