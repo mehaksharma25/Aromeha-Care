@@ -1,191 +1,932 @@
-/* RESET */
+/*
+   RESET
+*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Inter, Arial, sans-serif;
 }
-
-/* UNIVERSAL NAVBAR */
-/* UNIVERSAL NAVBAR (HOME PAGE STYLE EXACT) */
+ 
+:root {
+    --purple-1: #6b63ff;
+    --purple-2: #4f46e5;
+    --deep: #0e153b;
+    --muted: #6b708c;
+    --accent: #8e9aff;
+}
+ 
+/*
+   NAVBAR
+*/
 .navbar {
     width: 100%;
-    height: 70px;                  /* EXACT home page size */
-    background: white;
+    height: 72px;
+    background: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;               /* EXACT home padding */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 0 34px;
+    box-shadow: 0 3px 18px rgba(4, 6, 15, 0.06);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 120;
 }
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #3a3ad8;                /* home page blue */
-}
-
-.nav-links a {
-    margin-left: 20px;             /* same spacing */
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-}
-
-.nav-links .active {
-    color: #3a3ad8;                /* same accent */
-    font-weight: bold;
-}
-
-.nav-btn {
-    padding: 10px 20px;            /* exact button size */
-    background: #6366f1;           /* home theme */
+ 
+.btn-appointment {
+    background: #6366f1;
+    padding: 10px 22px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     color: white;
     cursor: pointer;
     font-size: 15px;
 }
-
-
-
-
-/* BANNER */
+ 
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--purple-2);
+}
+ 
+.nav-links a {
+    margin-left: 18px;
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 15px;
+    font-weight: 600;
+}
+ 
+.nav-links .active {
+    color: var(--purple-2);
+}
+ 
+.nav-btn {
+    padding: 9px 16px;
+    background: linear-gradient(135deg, var(--purple-1), var(--purple-2));
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+ 
+ 
+.page-wrapper {
+    padding-bottom: 120px;
+}
+ 
+/* ------------------------------
+   BANNER
+------------------------------ */
 .service-banner {
     position: relative;
     height: 320px;
-    width: 100%;
     overflow: hidden;
-    background: #dedfff;
+    background: linear-gradient(90deg, rgba(107, 99, 255, 0.08), rgba(79, 70, 229, 0.08));
 }
-
+ 
 .banner-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0.45;
 }
-
+ 
 .banner-content {
     position: absolute;
     top: 50%;
-    left: 120px;
+    left: 48px;
     transform: translateY(-50%);
-    z-index: 3;
 }
-
+ 
 .banner-content h1 {
-    font-size: 42px;
-    color: #1b1d8c;
-    margin-bottom: 10px;
+    font-size: 44px;
+    color: #10143a;
+    font-weight: 800;
+    margin-bottom: 6px;
 }
-
+ 
 .banner-content p {
-    color: #555;
+    color: var(--muted);
+    font-size: 16px;
 }
-
-
-
-/* MAIN SERVICE SECTION */
+ 
+/* ------------------------------
+   MAIN SECTION
+------------------------------ */
 .service-main {
     display: flex;
     justify-content: space-between;
-    padding: 80px 120px;
-    gap: 50px;
+    padding: 48px 6vw;
+    gap: 36px;
 }
-
-
-
-/* LEFT SIDE */
+ 
 .service-left {
-    width: 50%;
+    width: 48%;
     position: relative;
 }
-
+ 
 .service-left-circle {
     width: 420px;
     height: 420px;
-    background: #bfc4ff;
+    background: linear-gradient(180deg, var(--accent), #d8dbff);
+    opacity: 0.36;
+    filter: blur(4px);
     border-radius: 50%;
-    opacity: 0.35;
     position: absolute;
-    top: 0;
-    left: 50px;
-    z-index: 1;
+    top: -20px;
+    left: 40px;
 }
-
+ 
 .service-doctor {
-    width: 330px;
+    width: 380px;
+    border-radius: 10px;
     position: relative;
-    z-index: 2;
-    margin-left: 90px;
+    margin-left: 80px;
+    box-shadow: 0 20px 40px rgba(17, 24, 68, 0.08);
 }
-
-/* Calendar floating box */
-.service-calendar-box {
-    position: absolute;
-    bottom: -20px;
-    left: 115px;
-    z-index: 3;
-}
-
-.service-calendar-box img {
-    width: 240px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-
-
-/* RIGHT SIDE */
+ 
 .service-right {
-    width: 50%;
+    width: 48%;
 }
-
+ 
 .service-right h2 {
-    font-size: 32px;
-    line-height: 42px;
-    color: #1b1d8c;
-    margin-bottom: 18px;
+    font-size: 34px;
+    line-height: 44px;
+    color: #10143a;
+    font-weight: 800;
+    margin-bottom: 14px;
 }
-
+ 
 .service-right p {
-    color: #555;
+    color: #4f566b;
     font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 30px;
+    line-height: 26px;
+    margin-bottom: 22px;
 }
-
-
-
-/* OPERATING HOURS BOX */
+ 
+/* ------------------------------
+   OPERATING HOURS BOX
+------------------------------ */
 .service-hours-box {
-    width: 350px;
-    background: linear-gradient(135deg, #8e9aff, #5e6bff);
-    padding: 25px;
+    width: 100%;
+    max-width: 420px;
+    background: linear-gradient(135deg, #9aa2ff, #6b63ff);
+    padding: 28px;
     border-radius: 14px;
-    color: white;
+    color: #ffffff;
 }
-
+ 
 .service-hours-box h3 {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     font-size: 20px;
 }
-
+ 
 .service-hours-box ul {
     list-style: none;
 }
-
+ 
 .service-hours-box li {
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 700;
 }
-
-.closed {
-    opacity: 0.7;
+ 
+.service-hours-box .closed {
+    opacity: 0.75;
+}
+ 
+/* ------------------------------
+   APPOINTMENT SECTION
+------------------------------ */
+.appointment-section {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 32px;
+    padding: 40px 6vw 24px;
+}
+ 
+.form-box {
+    background: #ffffff;
+    padding: 34px;
+    border-radius: 18px;
+    box-shadow: 0 18px 60px rgba(99, 102, 241, 0.08);
+}
+ 
+.form-box h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--purple-2);
+    margin-bottom: 18px;
+}
+ 
+.input-group {
+    margin-bottom: 14px;
+}
+ 
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 14px;
+}
+ 
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #eef0ff;
+    background: #fbfbff;
+    outline: none;
+}
+ 
+.row {
+    display: flex;
+    gap: 14px;
+}
+ 
+textarea {
+    resize: none;
+}
+ 
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--purple-1), var(--purple-2));
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+ 
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(79, 70, 229, 0.18);
+}
+ 
+/* ------------------------------
+   INFO SIDE PANEL
+------------------------------ */
+.info-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+ 
+/* Emergency Box */
+.emergency-card {
+    background: linear-gradient(135deg, #ff6161, #ff8a8a);
+    padding: 18px;
+    border-radius: 12px;
+    color: #ffffff;
+    box-shadow: 0 12px 30px rgba(255, 90, 90, 0.12);
+}
+ 
+.em-label {
+    font-size: 13px;
+    font-weight: 700;
+}
+ 
+.em-number {
+    font-size: 26px;
+    font-weight: 900;
+    margin: 8px 0;
+}
+ 
+.em-note {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+ 
+.em-call {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    color: #ff6161;
+}
+ 
+/* Side Hours */
+.side-hours,
+.side-services {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 12px 30px rgba(99, 102, 241, 0.06);
+}
+ 
+.side-hours h4,
+.side-services h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #10143a;
+}
+ 
+.side-hours ul,
+.side-services ul {
+    list-style: none;
+}
+ 
+.side-hours li,
+.side-services li {
+    padding: 8px 0;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+/* ------------------------------
+   SERVICES LIST GRID
+------------------------------ */
+.services-list {
+    padding: 38px 6vw 48px;
+    background: linear-gradient(180deg, #fbfbff, #f2f4ff);
+}
+ 
+.section-sub {
+    color: var(--purple-1);
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+ 
+.section-title {
+    font-size: 26px;
+    color: #10143a;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+ 
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+ 
+.service-item {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 800;
+    text-align: center;
+    color: #10143a;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.06);
+}
+ 
+/* ------------------------------
+   CTA PANEL ABOVE FOOTER
+------------------------------ */
+.footer-cta {
+    background: linear-gradient(90deg, var(--purple-2), var(--purple-1));
+    color: #ffffff;
+    padding: 28px 6vw;
+    margin-top: 20px;
+    border-radius: 10px 10px 0 0;
+}
+ 
+.cta-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.cta-left h3 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+ 
+.cta-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    color: #ffffff;
+    background: linear-gradient(135deg, #7b72ff, #4f46e5);
+    box-shadow: 0 12px 30px rgba(79, 70, 229, 0.2);
+}
+ 
+.cta-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+ 
+.cta-card {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    gap: 12px;
+    min-width: 200px;
+}
+ 
+.cta-card i {
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+ 
+.cta-card strong {
+    font-size: 15px;
+    font-weight: 800;
+    color: #ffffff;
+}
+ 
+.cta-card small {
+    color: rgba(255, 255, 255, 0.9);
+}
+ 
+/* ------------------------------
+   FOOTER (WITHOUT SOCIALS)
+------------------------------ */
+.big-footer {
+    background: linear-gradient(180deg, var(--deep), #171b55);
+    padding: 56px 6vw 36px;
+    color: #e9e9ff;
+}
+ 
+.footer-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+ 
+.col {
+    flex: 1 1 200px;
+}
+ 
+.brand-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.brand-mark {
+    width: 54px;
+    height: 54px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--purple-1), var(--purple-2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+}
+ 
+.brand-text {
+    margin-top: 12px;
+    line-height: 1.6;
+    max-width: 420px;
+    color: rgba(233, 233, 255, 0.9);
+}
+ 
+.col h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #eef0ff;
+}
+ 
+.col ul {
+    list-style: none;
+}
+ 
+.col ul li {
+    margin-bottom: 8px;
+}
+ 
+.col ul li a {
+    text-decoration: none;
+    color: rgba(233, 233, 255, 0.9);
+}
+ 
+.footer-bottom {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+ 
+.footer-bottom a {
+    color: rgba(233, 233, 255, 0.85);
+    text-decoration: none;
+}
+ 
+.dot {
+    opacity: 0.4;
+}
+ 
+/* MENU BUTTON (Hamburger) */
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 300;
+}
+ 
+.menu-btn span {
+    width: 28px;
+    height: 3px;
+    background: #3b45ff;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+ 
+/* Mobile Only */
+@media (max-width: 850px) {
+ 
+    .menu-btn {
+        display: flex;
+    }
+ 
+    .btn-appointment {
+        display: none;
+    }
+ 
+    .nav-links {
+        position: absolute;
+        top: 72px;
+        right: 0;
+        width: 250px;
+        background: #fff;
+        display: none;
+        flex-direction: column;
+        padding: 25px;
+        gap: 18px;
+        border-radius: 0 0 0 14px;
+        box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+        z-index: 200;
+    }
+ 
+    .nav-links.open {
+        display: flex;
+    }
+}
+ 
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 980px) {
+ 
+    .service-main {
+        flex-direction: column;
+    }
+ 
+    .service-left-circle {
+        width: 300px;
+        height: 300px;
+        left: 10px;
+    }
+ 
+    .service-doctor {
+        margin: 0 auto;
+    }
+ 
+    .appointment-section {
+        grid-template-columns: 1fr;
+    }
+ 
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    .cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+ 
+@media (max-width: 640px) {
+ 
+    .nav-links {
+        display: none;
+    }
+ 
+    .banner-content h1 {
+        font-size: 28px;
+    }
+ 
+    .service-doctor {
+        width: 260px;
+    }
+ 
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+ 
+ 
+@media (max-width: 1100px) {
+ 
+  /* banner */
+  .service-banner {
+    height: auto;
+    padding: 40px 5vw;
+  }
+ 
+  .banner-content {
+    left: 40px;
+    max-width: 650px;
+  }
+ 
+  .banner-content h1 {
+    font-size: 34px;
+  }
+ 
+  .banner-img {
+    height: 260px;
+    object-fit: cover;
+  }
+ 
+  /* main section becomes stacked */
+  .service-main {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 5vw;
+    gap: 36px;
+  }
+ 
+  .service-left,
+  .service-right {
+    width: 100%;
+  }
+ 
+  .service-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+ 
+  .service-doctor {
+    width: 320px;
+    margin-left: 0;
+  }
+ 
+  .service-left-circle {
+    width: 300px;
+    height: 300px;
+    left: 10px;
+    top: -20px;
+    opacity: 0.26;
+  }
+ 
+  /* operating hours card */
+  .service-hours-box {
+    margin-top: 12px;
+    width: 100%;
+  }
+ 
+  /* appointment area: form + aside stack */
+  .appointment-section {
+    display: flex;
+    flex-direction: column;
+    padding: 36px 5vw;
+    gap: 28px;
+  }
+ 
+  .form-box {
+    width: 100%;
+    padding: 28px;
+  }
+ 
+  .info-panel {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+ 
+  .info-panel > * {
+    flex: 1 1 48%;
+    min-width: 220px;
+  }
+ 
+  /* services grid becomes 3 columns where possible */
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    padding: 0 0 30px 0;
+  }
+ 
+  /* doctors grid */
+  .doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+}
+ 
+ 
+@media (max-width: 700px) {
+ 
+  /* NAVBAR  */
+  .nav-links {
+    display: none;
+  }
+ 
+  .btn-appointment {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+ 
+  /* banner */
+  .service-banner {
+    padding: 28px 4vw;
+  }
+ 
+  .banner-content {
+    left: 18px;
+    transform: none;
+    top: auto;
+  }
+ 
+  .banner-content h1 {
+    font-size: 28px;
+    line-height: 1.12;
+  }
+ 
+  .banner-content p {
+    font-size: 14px;
+  }
+ 
+  .banner-img {
+    height: 200px;
+    opacity: 0.5;
+  }
+ 
+  /* main stacked fully */
+  .service-main {
+    padding: 28px 4vw;
+  }
+ 
+  .service-doctor {
+    width: 260px;
+  }
+ 
+  .service-left-circle {
+    display: none;
+  }
+ 
+  /* Hours box: full width and larger text */
+  .service-hours-box {
+    width: 100%;
+    padding: 18px;
+    border-radius: 12px;
+  }
+ 
+  .service-hours-box h3 {
+    font-size: 18px;
+  }
+ 
+  .service-hours-box li {
+    font-size: 14px;
+  }
+ 
+  /* appointment form */
+  .appointment-section {
+    padding: 24px 4vw;
+    gap: 18px;
+  }
+ 
+  .form-box {
+    width: 100%;
+    padding: 20px;
+  }
+ 
+  .form-box h2 {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+ 
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+ 
+  .row {
+    flex-direction: column;
+  }
+ 
+  /* aside info */
+  .info-panel {
+    flex-direction: column;
+  }
+ 
+  .info-panel > * {
+    width: 100%;
+  }
+ 
+  .em-number {
+    font-size: 20px;
+  }
+ 
+  .em-call {
+    display: inline-block;
+    margin-top: 10px;
+  }
+ 
+  /* services grid — single column lists */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+ 
+  .service-item {
+    padding: 18px;
+    text-align: left;
+  }
+ 
+  /* doctors — single column */
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .doctor-card {
+    margin: 0 auto;
+    width: 92%;
+  }
+ 
+  /* CTA and footer stacking */
+  .cta-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+  }
+ 
+  .cta-cards {
+    justify-content: center;
+  }
+ 
+  .footer-top {
+    padding: 24px 4vw;
+  }
+ 
+  .footer-bottom {
+    padding: 18px 4vw;
+    text-align: center;
+  }
+}
+ 
+ 
+@media (max-width: 420px) {
+ 
+  .hero {
+    padding: 28px 18px;
+  }
+ 
+  .hero-left h1 {
+    font-size: 22px;
+  }
+ 
+  .hero-left p,
+  .banner-content p {
+    font-size: 13px;
+  }
+ 
+  .main-photo,
+  .service-doctor,
+  .hero-image {
+    width: 220px;
+  }
+ 
+  .btn-primary,
+  .btn-ghost,
+  .btn-main,
+  .btn-outline,
+  .cta-btn {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+ 
+  .form-box {
+    padding: 14px;
+  }
+ 
+  .mini-post img {
+    height: 110px;
+  }
 }
