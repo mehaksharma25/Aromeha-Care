@@ -1,90 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aromeha Care – Services</title>
-    <link rel="stylesheet" href="services.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aromeha Care – Services</title>
+  <link rel="stylesheet" href="services.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-
-    <!-- NAVBAR -->
-<header class="navbar">
+ 
+  <header class="navbar">
     <div class="logo">Aromeha Care</div>
-
     <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="doctors.html">Doctors</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="doctors.html">Doctors</a>
+      <!-- <a href="contact.html">Contact</a> -->
     </nav>
-
-    <button class="nav-btn">Make Appointment</button>
-</header>
-
-
-
-    <!-- TOP BANNER -->
+    <button class="btn-appointment" onclick="location.href='appointment.html'">Make Appointment</button>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+  </header>
+ 
+  <main class="page-wrapper">
+ 
     <section class="service-banner">
-        <div class="banner-content">
-            <h1>Services Page</h1>
-            <p>Lorem ipsum dolor sit amet luctus pharetra etiam.</p>
-        </div>
-
-        <!-- ⭐ Replace banner image -->
-        <img src="your-banner-image.jpg" class="banner-img" alt="">
+      <div class="banner-content">
+        <h1>Services Page</h1>
+        <p>Lorem ipsum dolor sit amet luctus pharetra etiam.</p>
+      </div>
+      <img src="https://dunmedic.strongtheme.com/wp-content/uploads/2021/04/andun02.jpg" class="banner-img" alt="banner">
     </section>
-
-
-    <!-- MAIN CONTENT -->
+ 
     <section class="service-main">
-
-        <!-- LEFT SIDE -->
-        <div class="service-left">
-
-            <div class="service-left-circle"></div>
-
-            <!-- ⭐ Replace doctor image -->
-            <img src="your-doctor.png" class="service-doctor" alt="">
-
-            <div class="service-calendar-box">
-                <!-- ⭐ Replace calendar image -->
-                <img src="your-calendar.png" alt="">
-            </div>
+      <div class="service-left">
+        <div class="service-left-circle" aria-hidden="true"></div>
+        <img src="doc.jpg" class="service-doctor" alt="doctor">
+      </div>
+ 
+      <div class="service-right">
+        <h2>A great system application for<br>hospital center & health care</h2>
+        <p>
+          Semper ut proin auctor ac eget scelerisque sodales elementum nibh massa,
+          viverra maecenas vel habitant venenatis libero tortor volutpat taciti.
+        </p>
+ 
+        <div class="service-hours-box" aria-labelledby="hoursTitle">
+          <h3 id="hoursTitle">Operating Hours</h3>
+          <ul>
+            <li><span>Monday</span><span>8:00 am - 6:00 pm</span></li>
+            <li><span>Tuesday</span><span>7:00 am - 5:00 pm</span></li>
+            <li><span>Wednesday</span><span>9:00 am - 7:00 pm</span></li>
+            <li><span>Thursday</span><span>8:00 am - 6:00 pm</span></li>
+            <li><span>Friday</span><span>8:30 am - 6:00 pm</span></li>
+            <li><span>Saturday</span><span>9:30 am - 5:00 pm</span></li>
+            <li><span>Sunday</span><span class="closed">Closed</span></li>
+          </ul>
         </div>
-
-
-        <!-- RIGHT SIDE -->
-        <div class="service-right">
-
-            <h2>A great system application for<br>hospital center & health care</h2>
-
-            <p>
-                Semper ut proin auctor ac eget scelerisque sodales elementum nibh massa,
-                viverra maecenas vel habitant venenatis libero tortor volutpat taciti.
-            </p>
-
-            <div class="service-hours-box">
-
-                <h3>Operating Hours</h3>
-
-                <ul>
-                    <li><span>Monday</span><span>8:00 am - 6:00 pm</span></li>
-                    <li><span>Tuesday</span><span>7:00 am - 5:00 pm</span></li>
-                    <li><span>Wednesday</span><span>9:00 am - 7:00 pm</span></li>
-                    <li><span>Thursday</span><span>8:00 am - 6:00 pm</span></li>
-                    <li><span>Friday</span><span>8:30 am - 6:00 pm</span></li>
-                    <li><span>Saturday</span><span>9:30 am - 5:00 pm</span></li>
-                    <li><span>Sunday</span><span class="closed">Closed</span></li>
-                </ul>
-
-            </div>
-
-        </div>
-
+      </div>
     </section>
-
+ 
+    <section class="appointment-section">
+      <div class="form-box">
+        <h2>Fill Your Details</h2>
+        <form>
+          <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+ 
+          <div class="input-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+          </div>
+ 
+          <div class="row">
+            <div class="input-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Enter phone number" required>
+            </div>
+ 
+            <div class="input-group">
+              <label>Appointment Date</label>
+              <input type="date" required>
+            </div>
+          </div>
+ 
+          <div class="input-group">
+            <label>Select Department</label>
+            <select required>
+              <option>Cardiology</option>
+              <option>Dermatology</option>
+              <option>Orthopedics</option>
+              <option>Eye Care</option>
+              <option>Neurology</option>
+              <option>General Medicine</option>
+            </select>
+          </div>
+ 
+          <div class="input-group">
+            <label>Message</label>
+            <textarea placeholder="Write your message..." rows="4"></textarea>
+          </div>
+ 
+          <button class="submit-btn">Confirm Appointment</button>
+        </form>
+      </div>
+ 
+      <aside class="info-panel">
+        <div class="emergency-card">
+          <div class="em-label">Emergency Cases</div>
+          <div class="em-number">6240-123-4560</div>
+          <p class="em-note">We are available 24/7 for urgent care and emergency transport.</p>
+          <a href="tel:62401234560" class="em-call">Call Now</a>
+        </div>
+ 
+        <div class="side-hours">
+          <h4>Quick Hours</h4>
+          <ul>
+            <li><span>Mon - Fri</span><span>8:00 - 18:00</span></li>
+            <li><span>Sat</span><span>9:30 - 17:00</span></li>
+            <li><span>Sun</span><span class="closed">Closed</span></li>
+          </ul>
+        </div>
+ 
+        <div class="side-services">
+          <h4>Departments</h4>
+          <ul>
+            <li>Critical Care</li>
+            <li>Internal Medicine</li>
+            <li>Dental</li>
+            <li>Emergency</li>
+            <li>Pediatrics</li>
+            <li>Cardiology</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+ 
+    <section class="services-list">
+      <p class="section-sub">Our Departments</p>
+      <h3 class="section-title">What We Provide</h3>
+ 
+      <div class="services-grid">
+        <div class="service-item">Critical Care</div>
+        <div class="service-item">Internal Medicine</div>
+        <div class="service-item">Dental</div>
+        <div class="service-item">Emergency</div>
+        <div class="service-item">Pediatrics</div>
+        <div class="service-item">Cardiology</div>
+        <div class="service-item">Surgery</div>
+        <div class="service-item">Anesthesiology</div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <section class="footer-cta">
+    <div class="cta-inner">
+      <div class="cta-left">
+        <h3>Looking for professional & trusted medical healthcare?</h3>
+        <p>Don't hesitate — contact our team or book an appointment today.</p>
+        <a href="appointment.html" class="cta-btn">Make Appointment</a>
+      </div>
+ 
+      <div class="cta-cards">
+        <div class="cta-card">
+          <i class="fas fa-phone"></i>
+          <div><strong>+91 620 456 710</strong><small>Call us now</small></div>
+        </div>
+ 
+        <div class="cta-card">
+          <i class="fas fa-envelope"></i>
+          <div><strong>info@aromeha.com</strong><small>Drop us an email</small></div>
+        </div>
+ 
+        <div class="cta-card">
+          <i class="far fa-clock"></i>
+          <div><strong>24 x 7 support</strong><small>We are open on</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="big-footer">
+    <div class="footer-top">
+      <div class="col brand-col">
+        <div class="brand-row"><div class="brand-mark">A</div><h2 class="brand-name">Aromeha Care</h2></div>
+        <p class="brand-text">Pellentesque, placerat congue at urna risus tincidunt, himenaeos pretium fermentum. Providing trusted medical care with modern facilities and compassionate staff.</p>
+      </div>
+ 
+      <div class="col links-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="appointment.html">Make Appointments</a></li>
+          <li><a href="#">Customer Treatments</a></li>
+          <li><a href="#">Consulting your health</a></li>
+        </ul>
+      </div>
+ 
+      <div class="col services-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Surgery</a></li>
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Pediatrics</a></li>
+          <li><a href="#">Anesthesiology</a></li>
+        </ul>
+      </div>
+ 
+      <div class="col news-col">
+        <h4>Latest News</h4>
+        <div class="news-item"><img src="https://images.unsplash.com/photo-1587502536263-4b06f2b8d6d5?q=80&w=200&auto=format&fit=crop" alt=""><div><a href="#">Get the Home care and nursing service</a><small>Nov 12, 2025</small></div></div>
+      </div>
+    </div>
+ 
+    <div class="footer-bottom">
+      <div class="left">© <span id="footer-year"></span> Aromeha Care. All rights reserved.</div>
+      <div class="right"><a href="#">Privacy Policy</a><span class="dot">•</span><a href="#">Terms</a></div>
+    </div>
+  </footer>
+ 
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+ 
+  <script src="script.js"></script>
 </body>
 </html>
