@@ -10,6 +10,24 @@ body {
     background: white;
 }
 
+.hero {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 120px;
+    
+    background:
+        linear-gradient(135deg, rgba(155, 156, 255, 0.86), rgba(85, 79, 202, 0.86)),
+        url('images/drs.jpg'); 
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 /* NAVBAR */
 .navbar {
     height: 70px;
@@ -46,7 +64,7 @@ body {
 
 
 /* HERO SECTION */
-.hero {
+/* .hero {
     position: relative;
     width: 100%;
     min-height: 85vh;
@@ -56,7 +74,7 @@ body {
     padding: 80px 120px;
     background: linear-gradient(to right, #e4e6ff, #f2f3ff);
     overflow: hidden;
-}
+} */
 
 /* LEFT PART */
 .hero-left {
@@ -73,8 +91,9 @@ body {
 .hero-left p {
     width: 90%;
     font-size: 18px;
-    color: #555;
+    color: #ffffff;
     margin-bottom: 35px;
+    text-shadow: 3PX #333;
 }
 
 .hero-buttons button {
@@ -135,14 +154,976 @@ body {
     opacity: 0.45;
     z-index: 1;
 }
+/* ABOUT SECTION */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 120px;
+    gap: 60px;
+}
+
+/* LEFT SIDE */
+.about-left {
+    width: 45%;
+}
+
+.about-image-box {
+    position: relative;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Experience Box */
+.experience-box {
+    position: absolute;
+    left: -20px;
+    top: 40px;
+    width: 160px;
+    background: #26a8ff;
+    color: white;
+    padding: 25px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.experience-box h2 {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+/* RIGHT SIDE */
+.about-right {
+    width: 50%;
+}
+
+.about-small-title {
+    color: #3b45ff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-main-title {
+    font-size: 36px;
+    color: #16226f;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.about-features {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.about-features ul {
+    list-style: none;
+}
+
+.about-features li {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #444;
+}
+
+/* Signature + Doctor Mini Card */
+.about-bottom-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.signature {
+    font-size: 32px;
+    color: #45aefb;
+    font-style: italic;
+}
+
+/* Small doctor badge */
+.doctor-mini {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.doctor-mini img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.doctor-mini h4 {
+    color: #16226f;
+    font-size: 17px;
+}
+
+.doctor-mini p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* DEPARTMENTS SECTION */
+
+.departments-section {
+    padding: 100px 120px;
+    background: linear-gradient(
+        135deg,
+        #e6e7ff 0%,
+        #f3e9ff 45%,
+        #f5f7ff 100%
+    );  
+    position: relative;
+    overflow: hidden;
+}
+
+.departments-section::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: -120px;
+    width: 350px;
+    height: 350px;
+    background: #b8bfff;
+    opacity: 0.25;
+    filter: blur(40px);
+    border-radius: 50%;
+}
+
+.departments-section::after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: #ffcafb;
+    opacity: 0.22;
+    filter: blur(45px);
+    border-radius: 50%;
+}
+
+.departments-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 40px;
+}
+
+/* left title */
+.dept-left {
+    width: 50%;
+}
+
+.dept-sub {
+    color: #6b63ff;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.dept-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1b1d8b;
+    line-height: 45px;
+}
+
+/* right paragraph */
+.dept-right {
+    width: 45%;
+    font-size: 16px;
+    color: #444;
+    line-height: 26px;
+}
+
+/* Center button */
+.dept-center-btn {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.dept-btn {
+    background: #6b63ff;
+    padding: 12px 32px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 8px 25px rgba(107, 99, 255, 0.35);
+    transition: 0.3s ease;
+}
+
+.dept-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(107, 99, 255, 0.45);
+}
+
+/* 3 cards */
+.dept-cards {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    position: relative;
+    z-index: 3;
+}
+
+
+.dept-card {
+    width: 350px;                      
+    background: white;
+    border-radius: 20px;              
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 35px rgba(99, 102, 241, 0.22),
+        0 4px 12px rgba(0,0,0,0.07);
+
+    border: 1px solid #eceafe;         
+    transition: 0.3s ease;
+    padding-bottom: 10px;              
+}
+
+.dept-card:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 20px 45px rgba(99, 102, 241, 0.30),
+        0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* TEXT AREA */
+.dept-card-top {
+    padding: 30px;                     
+}
+
+.dept-card-top h3 {
+    font-size: 22px;
+    color: #1b1d8b;
+    margin-bottom: 12px;
+}
+
+.dept-card-top p {
+    font-size: 16px;
+    color: #555;
+    line-height: 24px;
+    margin-bottom: 22px;
+}
+
+/* LINK */
+.dept-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6b63ff;
+}
+
+/* BIGGER IMAGE */
+.dept-image {
+    width: 100%;
+    height: 230px;     
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+/* FEATURES SECTION */
+.features-section {
+    padding: 100px 120px;
+    text-align: center;
+}
+
+.features-sub {
+    color: #6b63ff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.features-title {
+    font-size: 34px;
+    color: #1b1d8c;
+    line-height: 42px;
+    margin-bottom: 15px;
+}
+
+.features-desc {
+    max-width: 650px;
+    margin: 0 auto 50px;
+    color: #555;
+    line-height: 26px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 35px 25px;
+    box-shadow: 0 15px 30px rgba(99,102,241,0.12);
+    transition: 0.2s ease-in-out;
+}
+
+.feature-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #1b1d8c;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(99,102,241,0.18);
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 35px 25px;
+    box-shadow: 0 15px 30px rgba(99,102,241,0.12);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+/* ICON */
+.feature-card img {
+    width: 60px;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+/* TEXT */
+.feature-card h3 {
+    color: #1b1d8c;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+
+.feature-card:hover {
+    background: #6b63ff;               
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(107, 99, 255, 0.45);
+    border-color: #4f46e5;              
+}
+
+/* ICON turns white on hover */
+.feature-card:hover img {
+    filter: brightness(0) invert(1);   
+}
+
+/* TEXT turns white on hover */
+.feature-card:hover h3 {
+    color: #ffffff;
+}
+
+
+/* DOCTORS SECTION */
+.doctors-section {
+    padding: 100px 120px;
+    text-align: center;
+    background: #f8f8ff;
+}
+
+.doctor-sub {
+    color: #6b63ff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.doctor-title {
+    font-size: 34px;
+    color: #1b1d8c;
+    line-height: 42px;
+    margin-bottom: 50px;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.doctor-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px rgba(107, 99, 255, 0.12);
+    transition: 0.35s ease;
+    cursor: pointer;
+}
+
+/* Doctor Image Box */
+.doctor-img-box {
+    width: 100%;
+    height: 240px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: 0.35s ease;
+}
+
+.doctor-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.35s ease;
+}
+
+/* Doctor Text */
+.doctor-card h3 {
+    font-size: 20px;
+    color: #1b1d8c;
+    margin-bottom: 5px;
+}
+
+.doctor-card p {
+    color: #777;
+    font-size: 15px;
+}
+
+/* HOVER EFFECT */
+.doctor-card:hover {
+    transform: translateY(-10px);
+    background: #6b63ff;
+    box-shadow: 0 20px 35px rgba(99,102,241,0.30);
+}
+
+.doctor-card:hover h3,
+.doctor-card:hover p {
+    color: #fff;
+}
+
+.doctor-card:hover img {
+    transform: scale(1.08);
+}
+
+.doctor-card:hover .doctor-img-box {
+    box-shadow: 0 12px 25px rgba(255,255,255,0.28);
+}
+
+
+
 
 
 /* FOOTER */
-.footer {
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-    background: #3c45d1;
+
+.footer-cta {
+    background: linear-gradient(90deg, #4f46e5, #6b63ff);
+    color: #fff;
+    padding: 22px 4vw;       
+    margin-top: 18px;        
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 12px 30px rgba(79,70,229,0.10);
+}
+
+.cta-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cta-left h3 {
+    font-size: 20px;
+    margin: 0 0 6px 0;
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.cta-left p {
+    margin: 0 0 10px 0;
+    opacity: 0.95;
+    font-size: 14px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg,#7b72ff,#4f46e5);
+    font-weight: 800;
+    box-shadow: 0 10px 26px rgba(79,70,229,0.14);
+}
+
+/* CTA cards */
+.cta-cards {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cta-card {
+    background: rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 10px 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    min-width: 170px;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.cta-card i {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* CTA text */
+.cta-card strong {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.cta-card small {
+    color: rgba(255,255,255,0.9);
+    font-size: 12px;
+}
+
+/* Footer */
+.big-footer {
+    background: linear-gradient(180deg, #0e153b 0%, #171b55 100%);
+    color: #e9e9ff;
+    padding: 40px 4vw 28px;
+}
+
+/* Footer layout */
+.footer-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+
+/* brand column spacing tightened */
+.brand-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-mark {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(135deg,#6b63ff,#4f46e5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.brand-name {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+}
+
+/* brand text max width and spacing */
+.brand-text {
+    margin-top: 10px;
+    color: rgba(233,233,255,0.9);
+    line-height: 1.6;
+    max-width: 360px;
+}
+
+/* lists */
+.col h4 {
     font-size: 15px;
+    margin-bottom: 10px;
+    color: #eef0ff;
+}
+
+.col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.col ul li {
+    margin-bottom: 8px;
+}
+
+.col ul li a {
+    color: rgba(233,233,255,0.9);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* news items */
+.news-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.news-item img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* footer bottom */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 18px auto 0;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(233,233,255,0.75);
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom .left {
+    font-size: 14px;
+}
+
+.footer-bottom .right a {
+    color: rgba(233,233,255,0.85);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+
+
+
+/* MENU BUTTON (Hamburger) */
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 300;
+}
+
+.menu-btn span {
+    width: 28px;
+    height: 3px;
+    background: #3b45ff;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+/* Mobile Only */
+@media (max-width: 850px) {
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .btn-appointment {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 72px;
+        right: 0;
+        width: 250px;
+        background: #fff;
+        display: none;
+        flex-direction: column;
+        padding: 25px;
+        gap: 18px;
+        border-radius: 0 0 0 14px;
+        box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+        z-index: 200;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* remove social block entirely if present (keeps markup safe) */
+.socials {
+    display: none !important;
+}
+
+/* small screens */
+@media (max-width: 980px) {
+    .cta-inner {
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .cta-left h3 {
+        font-size: 18px;
+    }
+
+    .big-footer {
+        padding: 36px 4vw 24px;
+    }
+
+    .footer-top {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cta-left h3 {
+        font-size: 16px;
+    }
+
+    .cta-card {
+        min-width: 100%;
+        justify-content: flex-start;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+
+/* --------- NAVBAR --------- */
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none; /* hide menu on phone */
+    }
+
+    .btn-appointment {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+}
+
+
+/* --------- HERO SECTION --------- */
+@media (max-width: 1050px) {
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 60px 40px;
+        text-align: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-left h1 {
+        font-size: 40px;
+    }
+
+    .hero-left p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 330px;
+        margin-top: 25px;
+    }
+
+    .circle-big,
+    .circle-small {
+        display: none;
+    }
+}
+
+
+/* --------- ABOUT SECTION --------- */
+@media (max-width: 1000px) {
+
+    .about-section {
+        flex-direction: column;
+        padding: 60px 40px;
+        text-align: center;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+    }
+
+    .about-image-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .experience-box {
+        left: 10px !important;
+        top: 10px !important;
+        transform: scale(0.9);
+    }
+
+    .about-features {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+
+/* --------- DEPARTMENTS SECTION --------- */
+@media (max-width: 1100px) {
+
+    .departments-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dept-left,
+    .dept-right {
+        width: 100%;
+    }
+
+    .dept-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dept-card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+
+/* --------- FEATURES SECTION --------- */
+@media (max-width: 1100px) {
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-section {
+        padding: 60px 30px;
+    }
+}
+
+
+/* --------- DOCTORS SECTION --------- */
+@media (max-width: 1100px) {
+
+    .doctors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .doctors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/* --------- FOOTER --------- */
+@media (max-width: 900px) {
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand-text {
+        margin: 0 auto 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .cta-inner {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-cards {
+        justify-content: center;
+    }
 }
